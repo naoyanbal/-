@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="千葉県八千代市の魅力、スポット、アクセスを紹介する観光ガイド">
+  <title>八千代市ガイド | 千葉県八千代市</title>
+  <style>
+    :root {
+      --green: #3f6d4d;
+      --light: #eef5e9;
+      --cream: #fbfaf4;
+      --ink: #26352d;
+      --rose: #bd6e82;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.8;
+    }
+    a { color: inherit; }
+    .hero {
+      min-height: 440px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 48px 20px;
+      background:
+        linear-gradient(rgba(29, 77, 48, .48), rgba(29, 77, 48, .48)),
+        radial-gradient(circle at 20% 20%, #9fc28e 0 12%, transparent 13%),
+        linear-gradient(135deg, #78a86c, #d8df9d);
+    }
+    .hero h1 { margin: 0 0 8px; font-size: clamp(2.5rem, 8vw, 5.4rem); letter-spacing: .12em; }
+    .hero p { margin: 0; font-size: clamp(1rem, 2.5vw, 1.35rem); }
+    nav { background: #fff; border-bottom: 1px solid #dde6d8; }
+    nav ul { max-width: 1000px; margin: 0 auto; padding: 0; list-style: none; display: flex; justify-content: center; flex-wrap: wrap; }
+    nav a { display: block; padding: 14px 22px; text-decoration: none; font-weight: bold; }
+    nav a:hover { background: var(--light); }
+    main { max-width: 1000px; margin: 0 auto; padding: 32px 20px 64px; }
+    section { scroll-margin-top: 20px; margin: 56px 0; }
+    h2 { color: var(--green); font-size: clamp(1.7rem, 4vw, 2.3rem); text-align: center; }
+    .lead { max-width: 720px; margin: 18px auto 36px; text-align: center; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+    .card { background: #fff; border-radius: 16px; padding: 24px; box-shadow: 0 8px 24px rgba(54, 84, 63, .08); }
+    .card h3 { color: var(--green); margin-top: 0; }
+    .spot { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; margin: 24px 0; }
+    .spot:nth-child(even) .visual { order: 2; }
+    .visual { min-height: 220px; border-radius: 18px; display: grid; place-items: center; color: #fff; font-size: 1.35rem; font-weight: bold; }
+    .rose { background: linear-gradient(135deg, #dca0ab, #8d4157); }
+    .river { background: linear-gradient(135deg, #72aeb2, #355b71); }
+    .road { background: linear-gradient(135deg, #9aaa68, #586c3d); }
+    .info { background: var(--light); border-radius: 18px; padding: 28px; }
+    .info dl { display: grid; grid-template-columns: 120px 1fr; margin: 0; }
+    .info dt { font-weight: bold; }
+    .info dt, .info dd { border-bottom: 1px solid #d6e1cf; padding: 10px 4px; }
+    .info dd { margin: 0; }
+    .button { display: inline-block; margin-top: 12px; border-radius: 999px; padding: 10px 18px; background: var(--green); color: #fff; text-decoration: none; }
+    footer { background: var(--green); color: #fff; text-align: center; padding: 28px 20px; }
+    @media (max-width: 680px) {
+      .spot { grid-template-columns: 1fr; }
+      .spot:nth-child(even) .visual { order: 0; }
+      .info dl { grid-template-columns: 1fr; }
+      .info dt { border-bottom: 0; padding-bottom: 0; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <h1>八千代市</h1>
+      <p>千葉県北西部の、自然と暮らしのあたたかなまち</p>
+    </div>
+  </header>
+
+  <nav aria-label="ページ内ナビゲーション">
+    <ul>
+      <li><a href="#about">八千代とは</a></li>
+      <li><a href="#charm">魅力</a></li>
+      <li><a href="#spots">スポット</a></li>
+      <li><a href="#access">基本情報</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>八千代市の景色を、もっと身近に</h2>
+      <p class="lead">住宅地のにぎわいと緑や川のやわらかな風景が調和する八千代市。都心への便利さに加えて、季節の花や地元の文化に触れられる場所もあります。</p>
+    </section>
+
+    <section id="charm">
+      <h2>八千代の魅力</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>自然と散策</h3>
+          <p>新川沿いの道や公園で、水辺や緑を感じながら散歩やサイクリングを楽しめます。</p>
+        </article>
+        <article class="card">
+          <h3>季節の花</h3>
+          <p>京成バラ園など、市内・周辺には季節ごとの花や庭園を楽しめるスポットがあります。</p>
+        </article>
+        <article class="card">
+          <h3>暮らしの便利さ</h3>
+          <p>鉄道や道路で周辺地域と結ばれ、通勤・通学や買い物、レジャーへの移動も身近です。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="spots">
+      <h2>おすすめスポット</h2>
+      <div class="spot">
+        <div class="visual rose">京成バラ園</div>
+        <div>
+          <h3>色と香りに包まれる庭園</h3>
+          <p>四季折々のバラや草花が楽しめる人気スポット。見頃や営業時間、イベントは公式情報をご確認ください。</p>
+          <a class="button" href="https://www.keiseirose.co.jp/garden/" target="_blank" rel="noopener">公式サイトを見る</a>
+        </div>
+      </div>
+      <div class="spot">
+        <div class="visual river">新川</div>
+        <div>
+          <h3>川沿いの散策路</h3>
+          <p>時間帯や季節によって表情を変える水辺の景色を楽しめます。散歩やランニングにもぴったりです。</p>
+        </div>
+      </div>
+      <div class="spot">
+        <div class="visual road">道の駅やちよ</div>
+        <div>
+          <h3>地域の味と暮らしに触れる</h3>
+          <p>地元ならではの農産物や特産品、地域の情報に出会える拠点です。営業状況は訪問前にご確認ください。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="access">
+      <h2>八千代市の基本情報</h2>
+      <div class="info">
+        <dl>
+          <dt>所在地</dt><dd>千葉県八千代市</dd>
+          <dt>読み方</dt><dd>やちよし</dd>
+          <dt>公式情報</dt>
+          <dd><a href="https://www.city.yachiyo.lg.jp/" target="_blank" rel="noopener">八千代市公式ウェブサイト</a></dd>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>八千代市ガイド</p>
+  </footer>
+</body>
+</html>
